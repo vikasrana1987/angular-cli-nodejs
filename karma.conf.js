@@ -39,6 +39,8 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Firefox'],
-    singleRun: false
+    // Continuous Integration mode
+    // if true, it capture browsers, run tests and exit
+    singleRun: true
   });
 };
