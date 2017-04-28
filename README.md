@@ -12,6 +12,13 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+`ng build && cpx server/* dist` command runs the normal ng build command which builds the application and places the assets into the `/dist` directory followed by a copy command to copy the `/server` files to the `/dist` folder.
+
+`ng build -prod && cpx server/*` dist command does the same, but passing the `-prod` option tells the CLI to bundle the application assets.
+Execute the command using `npm run build:server` or `npm run build:server-prod`
+
+Finally the two commands `npm run build:server && cd dist && node app.js`, `npm run build:server-prod && cd dist && node app.js` run the application using the node server from the local machine in either dev or production mode. 
+
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
