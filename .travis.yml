@@ -9,4 +9,4 @@ before_install:
 install:
   - npm install
 script:
-  - ng test
+  - ng test --single-run
