@@ -45,12 +45,5 @@
         "ts-node": "~2.0.0",
         "tslint": "~4.5.0",
         "typescript": "~2.2.0"
-    },
-    "//": [
-        "The first command runs the normal ng build command which builds the application and places the assets into the /dist directory followed by a copy command to copy the /node-server files to the /dist folder.",
-        "The second command does the same, but passing the -prod option tells the CLI to bundle the application assets.",
-        "Execute the command using npm run build:server or npm run build:server-prod",
-        "Finally the last two commands run the application using the node server from the local machine in either dev or production mode. Browse to http://localhost:3000 to see the app running from node.js",
-        "Execute the command using npm run serve-build or npm run serve-build-prod"
-    ]
+    }
 }
