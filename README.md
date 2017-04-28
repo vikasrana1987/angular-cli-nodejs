@@ -12,7 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-`ng build && cpx server/* dist` command runs the normal ng build command which builds the application and places the assets into the `/dist` directory followed by a copy command to copy the `/server` files to the `/dist` folder.
+`ng build && cpx server/* dist` command runs the normal `ng build` command which builds the application and places the assets into the `/dist` directory followed by a copy command to copy the `/server` files to the `/dist` folder.
 
 `ng build -prod && cpx server/*` dist command does the same, but passing the `-prod` option tells the CLI to bundle the application assets.
 Execute the command using `npm run build:server` or `npm run build:server-prod`
