@@ -3,6 +3,6 @@ sudo: false
 node_js:
   - "7.8.0"
 install:
-  - npm run build:server && cd dist && node app.js
+  - npm install
 script:
   - ng test
